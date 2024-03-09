@@ -1,9 +1,8 @@
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import { CardActionArea } from '@mui/material';
+import { Grid, Button } from '@mui/material';
 import Typography from '@mui/material/Typography';
-import Link from '@mui/material/Link';
 
 export default function ProductCard({
   productName,
@@ -17,26 +16,31 @@ export default function ProductCard({
   link: string;
 }) {
   return (
-    // TODO: Reformat this card to be more purchase focused
-    <Link href={link} style={{ textDecoration: 'none' }}>
-      <Card sx={{ maxWidth: 345 }}>
-        <CardActionArea>
-          <CardMedia
-            component="img"
-            height="140"
-            image={imgRef}
-            alt={productName}
-          />
-          <CardContent style={{ backgroundColor: '#f2dd08', padding: '8px' }}>
-            <Typography gutterBottom variant="h5" component="div">
-              {productName}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              {productDescription}
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-      </Card>
-    </Link>
+    <Card sx={{ maxWidth: 345 }}>
+      <CardMedia
+        component="img"
+        height="140"
+        image={imgRef}
+        alt={productName}
+      />
+      <CardContent style={{ backgroundColor: '#ffe135', padding: '8px' }}>
+        <Grid container alignItems="baseline" justifyContent="space-between">
+          <Typography gutterBottom variant="h5" component="div" style={{alignSelf: 'flex-start' }}>
+            {productName}
+          </Typography>
+          <Button
+            variant="contained"
+            style={{fontWeight: 'bold', backgroundColor: 'black', color: '#ffe135', borderRadius: 20 }}
+            href={link}
+          >
+            Order
+          </Button>
+        </Grid>
+
+        <Typography variant="body1" color="text.secondary">
+          {productDescription}
+        </Typography>
+      </CardContent>
+    </Card>
   );
 }

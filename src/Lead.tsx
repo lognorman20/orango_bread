@@ -17,8 +17,7 @@ function Lead() {
             >
                 <Grid item>
                     <Link href="https://www.instagram.com/orangobread/" target="_blank" rel="noopener noreferrer">
-                        {/* TODO: Change background color of this button */}
-                        <Button startIcon={<InstagramIcon />} variant="contained" style={{ borderRadius: 20, backgroundColor: '#C13584', color: 'white' }}>
+                        <Button startIcon={<InstagramIcon />} variant="contained" style={{ borderRadius: 20, backgroundColor: '#f2dd08', color: 'black' }}>
                             Instagram
                         </Button>
                     </Link>
