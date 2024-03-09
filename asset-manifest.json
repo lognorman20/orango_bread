@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/orangobread/static/css/main.c4663241.css",
-    "main.js": "/orangobread/static/js/main.c77e7eef.js",
-    "index.html": "/orangobread/index.html",
-    "main.c4663241.css.map": "/orangobread/static/css/main.c4663241.css.map",
-    "main.c77e7eef.js.map": "/orangobread/static/js/main.c77e7eef.js.map"
+    "main.css": "/orango_bread/static/css/main.c4663241.css",
+    "main.js": "/orango_bread/static/js/main.c77e7eef.js",
+    "index.html": "/orango_bread/index.html",
+    "main.c4663241.css.map": "/orango_bread/static/css/main.c4663241.css.map",
+    "main.c77e7eef.js.map": "/orango_bread/static/js/main.c77e7eef.js.map"
   },
   "entrypoints": [
     "static/css/main.c4663241.css",
