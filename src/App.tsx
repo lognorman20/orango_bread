@@ -1,14 +1,13 @@
 import './App.css';
-import ProductList from './ProductList';
+import Container from '@mui/material/Container';
+import ProductList from './Product/ProductList';
 
 function App() {
   return (
     <div className="App">
-      <header className="ProductList-header">
-        <div className="ProductList">
-          <ProductList />
-        </div>
-      </header>
+      <Container maxWidth="sm">
+        <ProductList />
+      </Container>
     </div>
   );
 }

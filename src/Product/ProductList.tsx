@@ -17,13 +17,20 @@ const products = [
 ];
 
 export default function ProductList() {
-    return (
-        <Grid container direction="column" spacing={3}>
-            {products.map((product, index) => (
-                <Grid item key={index} xs={12} sm={6} md={4} lg={3}>
-                    <ProductCard {...product} />
-                </Grid>
-            ))}
+  return (
+    <Grid
+      container
+      direction="row"
+      spacing={3}
+      justifyContent="center"
+      alignItems="center"
+    >
+      {products.map((product, index) => (
+        <Grid item key={index} xs={12} sm={6} md={4} lg={3} style={{ minWidth: '200px', minHeight: '200px' }}>
+          <ProductCard {...product} />
         </Grid>
-    )
+      ))}
+    </Grid>
+  )
 }
+

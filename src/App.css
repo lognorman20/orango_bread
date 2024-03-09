@@ -5,15 +5,3 @@
   min-height: 100vh;
   background-color: #101010; /* Dark banana theme */
 }
-
-.ProductList {
-  /* Optional: You can remove these styles if you want the header to span the full width of the page */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.ProductList-header {
-  padding: 20px;
-  text-align: center;
-}
