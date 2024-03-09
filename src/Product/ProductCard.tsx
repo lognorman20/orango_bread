@@ -17,6 +17,7 @@ export default function ProductCard({
   link: string;
 }) {
   return (
+    // TODO: Reformat this card to be more purchase focused
     <Link href={link} style={{ textDecoration: 'none' }}>
       <Card sx={{ maxWidth: 345 }}>
         <CardActionArea>

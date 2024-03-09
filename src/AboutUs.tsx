@@ -7,6 +7,7 @@ function AboutUs() {
                 ABOUT US
             </Typography>
             <Typography variant="body1" textAlign="center" gutterBottom>
+                {/* TODO: Write this section */}
                 SPOTEMGOTEM
             </Typography>
         </Box>
