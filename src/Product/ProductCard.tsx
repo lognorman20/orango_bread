@@ -26,7 +26,7 @@ export default function ProductCard({
             image={imgRef}
             alt={productName}
           />
-          <CardContent style={{ backgroundColor: '#fff59d', padding: '8px' }}>
+          <CardContent style={{ backgroundColor: '#f2dd08', padding: '8px' }}>
             <Typography gutterBottom variant="h5" component="div">
               {productName}
             </Typography>

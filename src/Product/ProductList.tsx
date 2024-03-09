@@ -1,5 +1,6 @@
 import Grid from '@mui/material/Grid';
 import ProductCard from './ProductCard';
+import { Box, Typography } from '@mui/material';
 
 const products = [
   {
@@ -18,19 +19,25 @@ const products = [
 
 export default function ProductList() {
   return (
-    <Grid
-      container
-      direction="row"
-      spacing={3}
-      justifyContent="center"
-      alignItems="center"
-    >
-      {products.map((product, index) => (
-        <Grid item key={index} xs={12} sm={6} md={4} lg={3} style={{ minWidth: '200px', minHeight: '200px' }}>
-          <ProductCard {...product} />
-        </Grid>
-      ))}
-    </Grid>
+    <Box>
+      <Typography variant="h4" textAlign="center" gutterBottom>
+        DELICACIES
+      </Typography>
+      <Grid
+        container
+        direction="row"
+        spacing={3}
+        justifyContent="center"
+        alignItems="center"
+        mb={2}
+      >
+        {products.map((product, index) => (
+          <Grid item key={index} xs={12} sm={6} md={4} lg={3} style={{ minWidth: '200px', minHeight: '200px' }}>
+            <ProductCard {...product} />
+          </Grid>
+        ))}
+      </Grid>
+    </Box>
   )
 }
 
