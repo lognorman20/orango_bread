@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/orangobread/static/css/main.c4663241.css",
+    "main.js": "/orangobread/static/js/main.c77e7eef.js",
+    "index.html": "/orangobread/index.html",
+    "main.c4663241.css.map": "/orangobread/static/css/main.c4663241.css.map",
+    "main.c77e7eef.js.map": "/orangobread/static/js/main.c77e7eef.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c4663241.css",
+    "static/js/main.c77e7eef.js"
+  ]
+}
